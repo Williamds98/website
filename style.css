@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(img/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+html{
+    height: 500vh;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .8s;
+    z-index: 1;
+}
+
+header.scroll{
+    background-color: whitesmoke;
+    padding: 10px 4%;
+}
+
+header.scroll a, header.scroll i{
+    color: #676767;
+}
+
+
+
+header i{
+    font-size: 35px;
+    color: whitesmoke;  
+    text-decoration: none;
+}
+
+header ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header ul li{
+    display: inline-block;
+    font-size: 17px;
+    color: #676767;
+    font-weight: 900px;   
+    text-decoration: none;  
+    margin-right: 25px;
+}
+
+header ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+.banner{
+    height: 100vh;
+    background-image: url;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 5em;
+    color: whitesmoke;
+}
+
+
+section.ondas{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+}
+
+.titulo{
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+
+    font-size: 37px;
+    color: white;
+}
+
+.apresentacao{
+    padding: 100px;
+    background-color: white;
+}
+
+.apresentacao h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.onda{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(img/onda.png);
+    background-size: 1000px 100px;
+
+    animation: ondaAnimada 3s ease-in-out infinite alternate;
+}
+
+@keyframes ondaAnimada {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(100px);
+    }
+}
+
+#onda1{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+
+#onda2{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+
+#onda3{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+#onda4{
+    z-index: 997;
+    opacity: 0.8;
+    background-position-x: 100px;
+}
